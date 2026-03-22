@@ -158,33 +158,19 @@
               <h3>Edit Playlist, Hatch Baby</h3>
               <dl class="project-details">
                 <div>
-                  <dt>Context</dt>
+                  <dt>Summary</dt>
                   <dd>
-                    A Hatch Baby release required playlist editing on Android.
-                    Initial design explored drag-and-drop reordering, but launch
-                    scope and risk needed tighter control.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Approach</dt>
-                  <dd>
-                    Daniel owned the feature end-to-end and proposed a lower-risk
-                    V1 with per-item Move Up / Move Down actions. Implementation
-                    used an MVI-inspired MVVM model with a single immutable UI
-                    state shared across Add and Edit flows.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
-                    The feature shipped on time with stable behavior, clear UX,
-                    and an architecture that left a clean path to richer V2
-                    interactions.
+                    Built playlist editing for a Hatch Baby Android release using
+                    MVI architecture. A single immutable UI state drove the
+                    feature, making state transitions clear, predictable, and easy
+                    to test across both Add and Edit flows. Shipped on time with a
+                    stable experience and a strong foundation for future
+                    enhancements.
                   </dd>
                 </div>
                 <div>
                   <dt>Tech Stack</dt>
-                  <dd>Kotlin, Jetpack Compose, Coroutines, Flow, MVVM/MVI</dd>
+                  <dd>Kotlin, Jetpack Compose, Coroutines, Flow, MVI</dd>
                 </div>
               </dl>
             </article>
