@@ -38,7 +38,6 @@
         </button>
         <ul class="nav-links" id="primary-nav">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#career">Career</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -49,7 +48,17 @@
     <main id="main-content">
       <section class="section hero" id="hero" aria-labelledby="hero-heading">
         <div class="container">
-          <p class="eyebrow">Senior Android Engineer · Walnut Creek, CA</p>
+          <figure class="hero-photo">
+            <img
+              src="images/profile.JPG"
+              alt="Portrait of Daniel Nugent"
+              width="1602"
+              height="1590"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+          <p class="eyebrow">Senior Android Engineer · San Francisco, CA</p>
           <h1 id="hero-heading">Daniel Nugent</h1>
           <p class="hero-lead">
             Senior Android engineer building polished Kotlin products with strong
@@ -63,6 +72,25 @@
           <div class="hero-actions">
             <a class="btn btn-primary" href="#work">View Work</a>
             <a class="btn btn-secondary" href="#contact">Contact</a>
+          </div>
+          <div class="hero-flair">
+            <p class="hero-flair-label">Stack Overflow</p>
+            <a
+              class="hero-flair-link"
+              href="https://stackoverflow.com/users/4409409/daniel-nugent"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View Daniel Nugent Stack Overflow profile"
+            >
+              <img
+                src="https://stackoverflow.com/users/flair/4409409.png?theme=dark"
+                width="208"
+                height="58"
+                alt="Stack Overflow profile flair for Daniel Nugent"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -86,215 +114,147 @@
         </div>
       </section>
 
-      <section class="section section-muted" id="skills" aria-labelledby="skills-heading">
-        <div class="container">
-          <h2 id="skills-heading">Skills / Expertise</h2>
-          <div class="skill-grid">
-            <article class="skill-card">
-              <h3>Android</h3>
-              <ul class="chip-list">
-                <li>Kotlin</li>
-                <li>Coroutines</li>
-                <li>Flow</li>
-                <li>Jetpack Compose</li>
-                <li>Retrofit</li>
-                <li>Room</li>
-                <li>Dagger/Hilt</li>
-                <li>Koin</li>
-                <li>RxJava</li>
-                <li>Epoxy</li>
-              </ul>
-            </article>
-
-            <article class="skill-card">
-              <h3>Architecture</h3>
-              <ul class="chip-list">
-                <li>MVVM</li>
-                <li>MVI</li>
-                <li>MVP</li>
-                <li>Clean Architecture</li>
-                <li>Immutable UI State</li>
-                <li>Feature Modularization</li>
-                <li>Testable Design</li>
-              </ul>
-            </article>
-
-            <article class="skill-card">
-              <h3>Delivery</h3>
-              <ul class="chip-list">
-                <li>Product Collaboration</li>
-                <li>Design Collaboration</li>
-                <li>Cross-Platform Delivery</li>
-                <li>Launch Planning</li>
-                <li>Quality and Scope Management</li>
-                <li>AI-Assisted Workflows</li>
-              </ul>
-            </article>
-
-            <article class="skill-card">
-              <h3>Tools</h3>
-              <ul class="chip-list">
-                <li>Android Studio</li>
-                <li>Xcode</li>
-                <li>Git</li>
-                <li>GitHub Actions</li>
-                <li>CircleCI</li>
-                <li>Jenkins</li>
-                <li>Fastlane</li>
-                <li>Swift / SwiftUI / UIKit</li>
-                <li>C/C++</li>
-                <li>SQL</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="work" aria-labelledby="work-heading">
         <div class="container">
-          <h2 id="work-heading">Selected Work</h2>
-          <div class="work-grid">
-            <article class="card project-card">
-              <h3>Edit Playlist, Hatch Baby</h3>
-              <dl class="project-details">
-                <div>
-                  <dt>Summary</dt>
-                  <dd>
-                    Built playlist editing for a Hatch Baby Android release using
-                    MVI architecture. A single immutable UI state drove the
-                    feature, making state transitions clear, predictable, and easy
-                    to test across both Add and Edit flows. Shipped on time with a
-                    stable experience and a strong foundation for future
-                    enhancements.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Tech Stack</dt>
-                  <dd>Kotlin, Jetpack Compose, Coroutines, Flow, MVI</dd>
-                </div>
-              </dl>
+          <div class="work-intro">
+            <h2 id="work-heading">Selected Work</h2>
+            <p>
+              Two shipped Android features with real product UI from production
+              releases.
+            </p>
+          </div>
+
+          <div class="project-showcase-list">
+            <article class="project-feature">
+              <figure class="project-shot">
+                <img
+                  src="images/edit-playlist.png"
+                  alt="Hatch Baby Edit Playlist Android screen with queued sounds and save playlist button."
+                  width="760"
+                  height="1708"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-content">
+                <p class="project-label">Hatch Baby · Android</p>
+                <h3>Edit Playlist</h3>
+                <p class="project-summary">
+                  Built playlist editing for a Hatch Baby Android release using
+                  MVI architecture. A single immutable UI state drove the feature,
+                  making state transitions clear, predictable, and easy to test
+                  across both Add and Edit flows. Shipped on time with a stable
+                  experience and a strong foundation for future enhancements.
+                </p>
+                <p class="project-tech-heading">Tech Stack</p>
+                <ul class="project-tech-list">
+                  <li>Kotlin</li>
+                  <li>Jetpack Compose</li>
+                  <li>Coroutines</li>
+                  <li>Flow</li>
+                  <li>MVI</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="card project-card">
-              <h3>Routine Swap, Restore 3</h3>
-              <dl class="project-details">
-                <div>
-                  <dt>Context</dt>
-                  <dd>
-                    Restore 3 users needed a clearer way to swap routines without
-                    losing structure, while keeping behavior predictable around
-                    schedule constraints.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Approach</dt>
-                  <dd>
-                    Built a focused swap flow with explicit state transitions and
-                    validation points, then refined interaction details with product
-                    and design to keep the experience fast and understandable.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
-                    Delivered a stable first release that reduced workflow friction
-                    for users and established a maintainable foundation for future
-                    routine management improvements.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Tech Stack</dt>
-                  <dd>Kotlin, Compose, Flow, ViewModel, Analytics Instrumentation</dd>
-                </div>
-              </dl>
-            </article>
-
-            <article class="card project-card">
-              <h3>Android Architecture Modernization</h3>
-              <dl class="project-details">
-                <div>
-                  <dt>Context</dt>
-                  <dd>
-                    Legacy Android patterns were slowing feature work and making
-                    behavior harder to reason about across the codebase.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Approach</dt>
-                  <dd>
-                    Led and contributed to modernization across key modules:
-                    Kotlin-first implementation, Coroutines/Flow adoption, clearer
-                    boundaries between UI/domain/data layers, and consistent UI state
-                    handling.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
-                    Improved maintainability and testability, reduced architectural
-                    inconsistency, and made feature iteration and release execution
-                    more predictable.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Tech Stack</dt>
-                  <dd>Kotlin, Coroutines, Flow, MVVM, Clean Architecture, CI</dd>
-                </div>
-              </dl>
+            <article class="project-feature project-feature--reverse">
+              <figure class="project-shot">
+                <img
+                  src="images/routine-swap.png"
+                  alt="Restore 3 Manage Routines Android screen showing routine carousel and recommendation cards."
+                  width="756"
+                  height="1706"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-content">
+                <p class="project-label">Restore 3 · Android</p>
+                <h3>Routine Swap</h3>
+                <p class="project-summary">
+                  Built a focused routine swap flow for Restore 3 so users could
+                  change routines without losing structure or breaking schedule
+                  constraints. Used explicit state transitions and validation
+                  checkpoints, then refined interaction details with product and
+                  design for a fast, clear experience. Shipped a stable first
+                  release that reduced user friction and established a maintainable
+                  foundation for future routine management improvements.
+                </p>
+                <p class="project-tech-heading">Tech Stack</p>
+                <ul class="project-tech-list">
+                  <li>Kotlin</li>
+                  <li>Compose</li>
+                  <li>Flow</li>
+                  <li>ViewModel</li>
+                  <li>MVI</li>
+                  <li>Analytics Instrumentation</li>
+                </ul>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
       <section class="section section-muted" id="career" aria-labelledby="career-heading">
-        <div class="container">
-          <h2 id="career-heading">Career Highlights</h2>
-          <ol class="timeline">
-            <li class="timeline-item">
-              <p class="timeline-meta">2020-2025</p>
-              <h3>Senior Mobile Engineer · Hatch Baby Inc</h3>
-              <p>
-                Shipped Android and iOS features in close partnership with product
-                and design. Modernized Android with Kotlin, Coroutines, Flow, and
-                MVVM/MVI to improve maintainability and release quality.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-meta">2019-2020</p>
-              <h3>Senior Software Engineer · Bluecrew</h3>
-              <p>
-                Delivered Android features in a 100% Kotlin codebase and led a major
-                rewrite from MVP to MVVM across most of the app.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-meta">2018-2019</p>
-              <h3>Senior Software Engineer · Turo</h3>
-              <p>
-                Developed Android features in Kotlin and Java and partnered on a
-                major redesign of a vehicle delivery flow.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-meta">2015-2018</p>
-              <h3>Software Engineer to Tech Lead · Open Garden</h3>
-              <p>
-                Built core mobile functionality for cryptocurrency payments,
-                peer-to-peer internet sharing, and FireChat messaging, then took technical
-                ownership of app architecture and UI/UX review.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-meta">2004-2015</p>
-              <h3>Software Engineer · Birdstep Technology</h3>
-              <p>
-                Led Android development for a WiFi Offload system app pre-installed
-                on over 10 million devices for a major U.S. mobile operator. Earlier
-                work included desktop WWAN software using Visual C++, Qt, and WebKit.
-              </p>
-            </li>
-          </ol>
-          <p class="education">B.S. Computer Science, University of Maryland (2001)</p>
+        <div class="container career-layout">
+          <div class="career-main">
+            <h2 id="career-heading">Career Highlights</h2>
+            <p class="career-intro">
+              Senior Android and mobile engineering experience across consumer
+              product teams, platform modernization efforts, and high-scale
+              operator deployments.
+            </p>
+            <ol class="timeline">
+              <li class="timeline-item">
+                <p class="timeline-meta">2020-2025</p>
+                <h3>Senior Mobile Engineer · Hatch Baby Inc</h3>
+                <p>
+                  Shipped Android and iOS features in close partnership with product
+                  and design. Modernized Android with Kotlin, Coroutines, Flow, and
+                  MVVM/MVI to improve maintainability and release quality.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <p class="timeline-meta">2019-2020</p>
+                <h3>Senior Software Engineer · Bluecrew</h3>
+                <p>
+                  Delivered Android features in a 100% Kotlin codebase and led a major
+                  rewrite from MVP to MVVM across most of the app.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <p class="timeline-meta">2018-2019</p>
+                <h3>Senior Software Engineer · Turo</h3>
+                <p>
+                  Developed Android features in Kotlin and Java and partnered on a
+                  major redesign of a vehicle delivery flow.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <p class="timeline-meta">2015-2018</p>
+                <h3>Software Engineer to Tech Lead · Open Garden</h3>
+                <p>
+                  Built core mobile functionality for cryptocurrency payments,
+                  peer-to-peer internet sharing, and FireChat messaging, then took technical
+                  ownership of app architecture and UI/UX review.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <p class="timeline-meta">2004-2015</p>
+                <h3>Software Engineer · Birdstep Technology</h3>
+                <p>
+                  Led Android development for a WiFi Offload system app pre-installed
+                  on over 10 million devices for a major U.S. mobile operator. Earlier
+                  work included desktop WWAN software using Visual C++, Qt, and WebKit.
+                </p>
+              </li>
+            </ol>
+          </div>
+
+          <aside class="education-card" aria-labelledby="education-heading">
+            <p class="education-label">Education</p>
+            <h3 id="education-heading">B.S. Computer Science</h3>
+            <p class="education-school">University of Maryland</p>
+            <p class="education-year">Class of 2001</p>
+          </aside>
         </div>
       </section>
 
@@ -310,9 +270,7 @@
             <a class="btn btn-secondary" href="https://github.com/dmnugent80" target="_blank" rel="noreferrer">GitHub</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/danielnugentsoftwareengineer/" target="_blank" rel="noreferrer">LinkedIn</a>
             <!-- Replace with your preferred contact email -->
-            <a class="btn btn-secondary" href="mailto:daniel@example.com">Email</a>
-            <!-- Replace with hosted resume URL -->
-            <a class="btn btn-primary" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <a class="btn btn-secondary" href="mailto:danielnugent@gmail.com">Email</a>
           </div>
         </div>
       </section>
