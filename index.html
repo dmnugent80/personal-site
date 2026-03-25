@@ -20,7 +20,7 @@
     <meta property="og:image:alt" content="Daniel Nugent, Senior Android Engineer" />
     <!-- Replace with your favicon path -->
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="style.css?v=20260323-1" />
+    <link rel="stylesheet" href="style.css?v=20260325-1" />
     <script src="script.js?v=20260323-1" defer></script>
   </head>
   <body>
@@ -61,58 +61,79 @@
           </figure>
           <p class="eyebrow">Senior Android Engineer · San Francisco, CA</p>
           <h1 id="hero-heading">Daniel Nugent</h1>
-          <p class="hero-lead">
-            Senior mobile engineer with deep Android expertise, building polished,
-            production-ready Kotlin products with strong product judgment and dependable
-            execution.
-          </p>
+          <p class="hero-lead">Senior Android Engineer</p>
           <p class="hero-copy">
-            I’ve been shipping mobile software since 2010, turning product ideas into
-            production-ready Android experiences through clear scope, modern
-            architecture, and close collaboration with product and design.
+            I build Android apps end to end, from discovery and architecture through
+            implementation, release, and iteration. I help product-focused teams move
+            quickly without sacrificing code quality, maintainability, or user experience.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#work">View Projects</a>
             <a class="btn btn-secondary" href="#contact">Contact</a>
+            <a class="btn btn-secondary" href="resume.pdf">Resume</a>
           </div>
-          <div class="hero-flair">
-            <p class="hero-flair-label">Stack Overflow</p>
-            <a
-              class="hero-flair-link"
-              href="https://stackoverflow.com/users/4409409/daniel-nugent"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View Daniel Nugent Stack Overflow profile"
-            >
-              <img
-                src="https://stackoverflow.com/users/flair/4409409.png?theme=dark"
-                width="208"
-                height="58"
-                alt="Stack Overflow profile flair for Daniel Nugent"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-          </div>
+          <ul class="proof-strip" aria-label="Experience highlights">
+            <li class="proof-item">
+              <p class="proof-title">20 years in software</p>
+              <p class="proof-copy">
+                Deep engineering experience across product development and delivery.
+              </p>
+            </li>
+            <li class="proof-item">
+              <p class="proof-title">Android specialist</p>
+              <p class="proof-copy">
+                Strong in Kotlin, Compose, coroutines, Flow, testing, and maintainable architecture.
+              </p>
+            </li>
+            <li class="proof-item">
+              <p class="proof-title">43k+ Stack Overflow reputation</p>
+              <p class="proof-copy">
+                Long-time contributor helping developers solve real Android and software engineering problems.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="section" id="about" aria-labelledby="about-heading">
         <div class="container">
           <h2 id="about-heading">About</h2>
-          <p>
-            I’m a senior mobile engineer with deep Android expertise, focused on turning
-            product ideas into polished, production-ready experiences. I work closely with
-            product and design, from early tradeoff discussions through implementation,
-            testing, and release.
+          <p class="about-copy">
+            I’m a senior Android engineer with deep experience building mobile products
+            that are clean, reliable, and ready to grow.
           </p>
-          <p>
-            Android is my core specialization, and I’ve also contributed significantly to
-            iOS development. My approach balances delivery speed, product quality, and
-            long-term maintainability through pragmatic architecture and AI-assisted
-            workflows that improve planning and iteration speed while keeping engineering
-            standards high.
+          <p class="about-copy">
+            I’m strongest on small, product-focused teams where Android needs to move
+            quickly without turning into a mess. I like working across the full path from
+            discovery and planning through implementation, release, and iteration, and I
+            care about making good technical decisions early so products stay flexible as
+            they evolve.
           </p>
+          <p class="about-copy">
+            My core stack is Kotlin, Jetpack Compose, coroutines, Flow, and modern Android
+            architecture. I focus on code that is understandable, testable, and practical to
+            maintain, with strong attention to user experience, performance, and release
+            quality.
+          </p>
+          <p class="about-copy">
+            I also use AI-assisted workflows to speed up planning, prototyping, and
+            implementation in small, verifiable steps, while keeping human judgment on
+            architecture, tradeoffs, and code quality.
+          </p>
+        </div>
+      </section>
+
+      <section class="section what-i-bring" aria-labelledby="what-i-bring-heading">
+        <div class="container">
+          <h2 id="what-i-bring-heading">What I bring</h2>
+          <ul class="bring-list">
+            <li>End-to-end Android ownership, from idea to shipped product</li>
+            <li>Strong Kotlin and modern Android fundamentals</li>
+            <li>Pragmatic architecture that supports fast iteration</li>
+            <li>Close collaboration with product and design</li>
+            <li>Clear communication and dependable execution</li>
+            <li>AI-assisted workflows used in a disciplined, quality-focused way</li>
+          </ul>
         </div>
       </section>
 
@@ -121,8 +142,8 @@
           <div class="work-intro">
             <h2 id="work-heading">Recent Project Work</h2>
             <p>
-              Selected Android project work across recent production releases and personal
-              architecture-focused development.
+              A selection of Android work focused on product delivery, maintainable
+              architecture, and thoughtful user experience.
             </p>
           </div>
       
@@ -141,12 +162,12 @@
                 <p class="project-label">Hatch Baby · Android</p>
                 <h3>Edit Playlist</h3>
                 <p class="project-summary">
-                  Implemented playlist editing for a Hatch Baby Android release using MVI
-                  architecture. A single immutable UI state drove the feature, while a layered
-                  architecture built around use cases and repositories kept the ViewModel
-                  focused and the Add and Edit flows easier to reason about and test. The
-                  result was a stable shipped experience with a clean foundation for future
-                  iteration.
+                  Shipped playlist editing so users could manage saved sounds more easily in
+                  a core part of the app experience. The challenge was keeping add and edit
+                  behavior consistent while still moving quickly for release. I built it with a
+                  single immutable UI state, intent-driven MVI flow, and layered use-case and
+                  repository boundaries to keep behavior predictable and the implementation
+                  easy to extend and test.
                 </p>
                 <p class="project-tech-heading">Tech Stack</p>
                 <ul class="project-tech-list">
@@ -173,12 +194,12 @@
                 <p class="project-label">Restore 3 · Android</p>
                 <h3>Routine Swap</h3>
                 <p class="project-summary">
-                  Built a routine swap flow for Restore 3 to let users change routines without
-                  breaking schedule constraints or losing structure. The implementation used
-                  explicit state transitions, along with a layered architecture built around use
-                  cases and repositories, to keep the flow clear, reliable, and easy to
-                  maintain. It shipped as a polished first release and established a strong base
-                  for future routine management improvements.
+                  Delivered routine swapping so users could change routines without breaking
+                  schedule constraints or losing structure. This flow touched core product
+                  rules, so reliability and clarity were critical from the first release. I
+                  implemented explicit state transitions with ViewModel + MVI patterns and
+                  use-case-driven architecture, then added analytics instrumentation to support
+                  iteration after launch.
                 </p>
                 <p class="project-tech-heading">Tech Stack</p>
                 <ul class="project-tech-list">
@@ -214,10 +235,11 @@
                   </a>
                 </h3>
                 <p class="project-summary">
-                  Built a personal Android project to showcase the architecture I prefer for
-                  production apps. It uses a layered, modularized architecture overall, with
-                  MVI in the view layer for clear, predictable state management and
-                  maintainable feature development as the app grows.
+                  Built this project to demonstrate a production-minded Android foundation for
+                  scalable feature delivery. The goal was to keep user flows smooth while
+                  proving that architecture can stay practical as complexity grows. I used a
+                  layered, modular approach with MVI-driven UI state and modern Android
+                  tooling to keep behavior predictable and maintenance straightforward.
                 </p>
                 <p class="project-tech-heading">Tech Stack</p>
                 <ul class="project-tech-list">
@@ -252,15 +274,17 @@
 
       <section class="section" id="contact" aria-labelledby="contact-heading">
         <div class="container">
-          <h2 id="contact-heading">Contact</h2>
+          <h2 id="contact-heading">Hiring for Android?</h2>
           <p class="contact-copy">
-            For Android product and platform roles focused on execution, architecture, and
-            user experience, <a href="mailto:danielnugent@gmail.com">email me</a>.
+            I help teams build and ship Android products with strong execution, pragmatic
+            architecture, and attention to user experience. Reach out at
+            <a href="mailto:danielnugent@gmail.com">danielnugent@gmail.com</a>.
           </p>
           <div class="contact-links">
             <!-- Replace placeholder links with your real profiles -->
             <a class="btn btn-secondary" href="https://github.com/dmnugent80" target="_blank" rel="noreferrer">GitHub</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/danielnugentsoftwareengineer/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="https://stackoverflow.com/users/4409409/daniel-nugent" target="_blank" rel="noreferrer">Stack Overflow</a>
             <!-- Replace with your preferred contact email -->
             <a class="btn btn-secondary" href="mailto:danielnugent@gmail.com">Email</a>
           </div>

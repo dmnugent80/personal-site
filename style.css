@@ -249,36 +249,35 @@ ol {
   margin-top: var(--space-4);
 }
 
-.hero-flair {
+.proof-strip {
+  list-style: none;
   margin-top: var(--space-4);
-  display: inline-flex;
-  flex-direction: column;
-  gap: 0.55rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  max-width: 64rem;
 }
 
-.hero-flair-label {
+.proof-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-soft);
+}
+
+.proof-title {
   margin: 0;
   color: var(--color-accent);
-  font-size: 0.72rem;
+  font-size: 0.95rem;
   font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  line-height: 1.3;
 }
 
-.hero-flair-link {
-  display: inline-flex;
-  padding: 0.45rem;
-  border: 1px solid var(--color-line);
-  border-radius: 0.8rem;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
-}
-
-.hero-flair-link img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.45rem;
+.proof-copy {
+  margin: 0.45rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .btn {
@@ -327,6 +326,35 @@ ol {
 h2 {
   margin-bottom: var(--space-4);
   font-size: clamp(1.45rem, 3vw, 1.9rem);
+}
+
+.about-copy {
+  max-width: 52rem;
+}
+
+.about-copy:last-child {
+  margin-bottom: 0;
+}
+
+.what-i-bring {
+  padding-top: 0;
+}
+
+.bring-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+  max-width: 62rem;
+}
+
+.bring-list li {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 0.95rem;
+  color: var(--color-text);
+  font-weight: 600;
 }
 
 .skill-grid {
@@ -644,6 +672,10 @@ h2 {
 }
 
 @media (max-width: 1020px) {
+  .proof-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .project-feature,
   .project-feature--reverse {
     grid-template-columns: 1fr;
@@ -710,6 +742,11 @@ h2 {
 @media (max-width: 780px) {
   .section {
     padding: var(--space-6) 0;
+  }
+
+  .proof-strip,
+  .bring-list {
+    grid-template-columns: 1fr;
   }
 
   .skill-grid {
