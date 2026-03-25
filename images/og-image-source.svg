@@ -28,38 +28,38 @@
   <rect width="1200" height="630" fill="url(#glowC)" />
 
   <text
-    x="72"
-    y="165"
+    x="84"
+    y="164"
     fill="#03dac5"
     font-family="Avenir Next, Segoe UI, Arial, sans-serif"
-    font-size="30"
+    font-size="28"
     font-weight="700"
-    letter-spacing="0.04em"
+    letter-spacing="0.06em"
   >
-    SENIOR ANDROID ENGINEER
+    SENIOR MOBILE ENGINEER
   </text>
 
   <text
-    x="72"
-    y="270"
+    x="84"
+    y="274"
     fill="#ffffff"
     font-family="Avenir Next, Segoe UI, Arial, sans-serif"
-    font-size="82"
+    font-size="86"
     font-weight="700"
   >
     Daniel Nugent
   </text>
 
   <text
-    x="72"
-    y="350"
+    x="84"
+    y="372"
     fill="#ffffff"
-    fill-opacity="0.9"
+    fill-opacity="0.94"
     font-family="Avenir Next, Segoe UI, Arial, sans-serif"
-    font-size="36"
+    font-size="34"
     font-weight="500"
   >
-    Kotlin &#8226; Jetpack Compose &#8226; MVI
+    Android &#8226; Kotlin &#8226; iOS &#8226; Swift
   </text>
 
   <image
