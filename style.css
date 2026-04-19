@@ -536,6 +536,27 @@ h2 {
   background: rgba(3, 218, 197, 0.16);
 }
 
+.project-feature--wide {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "shot"
+    "content";
+  gap: var(--space-4);
+}
+
+.project-feature--wide .project-shot {
+  width: 100%;
+  max-width: none;
+}
+
+.project-feature--wide .project-content {
+  width: 100%;
+}
+
+.project-feature--wide .project-summary:last-of-type {
+  margin-bottom: 0;
+}
+
 .timeline {
   list-style: none;
   display: grid;
@@ -688,6 +709,11 @@ h2 {
   .project-shot {
     max-width: 390px;
     justify-self: center;
+  }
+
+  .project-feature--wide .project-shot {
+    max-width: none;
+    width: 100%;
   }
 
   .project-content {

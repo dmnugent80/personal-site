@@ -134,6 +134,61 @@
         </div>
       </section>
 
+      <section class="section" id="featured-project" aria-labelledby="featured-project-heading">
+        <div class="container">
+          <div class="work-intro">
+            <h2 id="featured-project-heading">Featured Project</h2>
+          </div>
+
+          <div class="project-showcase-list">
+            <article class="project-feature project-feature--personal project-feature--wide">
+              <figure class="project-shot">
+                <img
+                  src="images/skatespots_project.png"
+                  alt="Skatespots app screens showing map-based spot discovery, spot details, and profile management."
+                  width="2400"
+                  height="1500"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-content">
+                <p class="project-label">Personal Project · Android</p>
+                <h3>Skatespots</h3>
+                <p class="project-summary">
+                  Skatespots is an end-to-end skate spot discovery app that I designed and built
+                  across both the backend and Android client. The app gives skaters a way to find
+                  nearby spots on a map, create and share spot listings, upload photos, add
+                  terrain tags, save favorites, and manage their profile.
+                </p>
+                <p class="project-summary">
+                  I built the backend as a production-ready TypeScript API on Cloudflare Workers
+                  with authentication, user profiles, spot CRUD, photo uploads, check-ins,
+                  favorites, pagination, validation, ownership rules, and admin tooling. The API
+                  supports dev and production environments, D1 migrations, R2-style image
+                  workflows, JWT access and refresh tokens, Cloudflare Access-protected admin
+                  routes, CI deploy health checks, and a documented request/response contract for
+                  mobile clients.
+                </p>
+                <p class="project-summary">
+                  On Android, I built the app using Jetpack Compose, Material 3, Clean
+                  Architecture, and an MVI presentation pattern. The project is structured with
+                  feature modules for screens, shared core UI components, a pure Kotlin domain
+                  layer, and a data layer backed by Retrofit, OkHttp, Room, DataStore, Hilt,
+                  Coroutines, and Flow. The Android app connects directly to the Cloudflare-hosted
+                  API, with debug and release builds targeting separate backend environments.
+                </p>
+                <p class="project-summary">
+                  The current Android experience includes login/signup, a personalized home screen,
+                  searchable spot cards, interactive map discovery, favorites, spot editing, photo
+                  management, tags, and profile editing. I&rsquo;m also planning to build the iOS
+                  version soon, using the same backend API and product model.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="work" aria-labelledby="work-heading">
         <div class="container">
           <div class="work-intro">
@@ -265,6 +320,7 @@
                 </p>
               </div>
             </article>
+
           </div>
         </div>
       </section>
