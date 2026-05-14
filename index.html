@@ -159,8 +159,8 @@
                   I built the backend as a production-ready TypeScript API on Cloudflare Workers
                   with authentication, user profiles, spot CRUD, photo uploads, check-ins,
                   favorites, pagination, validation, ownership rules, and admin tooling. The API
-                  supports dev and production environments, D1 migrations, R2-style image
-                  workflows, JWT access and refresh tokens, Cloudflare Access-protected admin
+                  supports dev and production environments, D1 database migrations, Cloudflare R2
+                  image storage, JWT access and refresh tokens, Cloudflare Access-protected admin
                   routes, CI deploy health checks, and a documented request/response contract for
                   mobile clients.
                 </p>
@@ -175,8 +175,11 @@
                 <p class="project-summary">
                   The current Android experience includes login/signup, a personalized home screen,
                   searchable spot cards, interactive map discovery, favorites, spot editing, photo
-                  management, tags, and profile editing. I&rsquo;m also planning to build the iOS
-                  version soon, using the same backend API and product model.
+                  management, tags, and profile editing. I'm currently building the iOS version in
+                  Swift and SwiftUI, using the same backend API and product model. The iOS app
+                  follows the architecture style from my SwiftUI example project, with a clear
+                  separation between presentation, domain, and data layers, async API integration,
+                  dependency-injected services, and testable feature-focused code.
                 </p>
               </div>
             </article>
