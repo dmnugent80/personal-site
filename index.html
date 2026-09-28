@@ -15,7 +15,7 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Daniel Nugent, Experienced Mobile Engineer" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="style.css?v=20260325-1" />
+    <link rel="stylesheet" href="style.css?v=20260927-1" />
     <script src="script.js?v=20260323-1" defer></script>
   </head>
   <body>
@@ -130,10 +130,105 @@
 
       <section class="section" id="featured-project" aria-labelledby="featured-project-heading">
         <div class="container">
-          <div class="work-intro">
-            <h2 id="featured-project-heading">Featured Project</h2>
+          <h2 id="featured-project-heading">Projects</h2>
+
+          <div class="thingmap-intro">
+            <p class="status-pill">Coming Soon · iOS &amp; Android</p>
+            <h3>ThingMap</h3>
+            <p class="thingmap-lead">
+              A home inventory app for knowing exactly where everything is: every room,
+              shelf, and storage bin, searchable from your phone.
+            </p>
+            <p>
+              I designed and built ThingMap end to end: a TypeScript API on Cloudflare, a
+              Next.js admin console, and fully native apps for Android (Kotlin and Jetpack
+              Compose) and iOS (SwiftUI).
+            </p>
+          </div>
+        </div>
+
+        <figure class="thingmap-hero">
+          <img
+            src="images/thingmap_promo_android.png"
+            alt="ThingMap Android app screens: profile, all items, locations, a garage location with its items, and an item detail view for surfboards."
+            width="1794"
+            height="876"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+
+        <div class="container">
+          <h4 class="thingmap-stack-heading">How it's built</h4>
+          <div class="thingmap-stack">
+            <div class="thingmap-stack-item">
+              <h4>Backend</h4>
+              <p>
+                A TypeScript API on Cloudflare Workers, with HTTP routes, domain models,
+                persistence helpers, middleware, and services kept separate. D1 holds the
+                relational inventory data, R2 stores images, and JWT access/refresh auth
+                enforces ownership on every authenticated resource. Schema changes are
+                managed through migrations. A separate Next.js admin console lets me inspect
+                users, usage, verification state, and sessions, and take moderation actions.
+                It talks only to protected admin endpoints and never touches backend
+                internals.
+              </p>
+              <ul class="project-tech-list">
+                <li>TypeScript</li>
+                <li>Cloudflare Workers</li>
+                <li>D1</li>
+                <li>R2</li>
+                <li>JWT</li>
+                <li>Next.js</li>
+              </ul>
+            </div>
+
+            <div class="thingmap-stack-item">
+              <h4>Android</h4>
+              <p>
+                Kotlin and Jetpack Compose, with a layered, Clean Architecture–style design
+                split into Gradle modules: an app shell, shared core modules, and one module
+                per feature. The presentation layer uses MVI. Screens send intents to
+                Hilt-injected ViewModels, which expose a single immutable view state and
+                one-off effects. A pure-Kotlin domain layer defines the models, repository
+                interfaces, and use cases. The data layer implements them with Retrofit over
+                the API and a Room cache, which keeps the app responsive while it syncs in the
+                background.
+              </p>
+              <ul class="project-tech-list">
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+                <li>MVI</li>
+                <li>Hilt</li>
+                <li>Retrofit</li>
+                <li>Room</li>
+              </ul>
+            </div>
+
+            <div class="thingmap-stack-item">
+              <h4>iOS</h4>
+              <p>
+                SwiftUI, with nearly all of the code in a local Swift Package: feature modules
+                (Auth, Home, Item, Search, Profile) built on shared Core and DesignSystem
+                modules. The presentation layer uses MVVM with <code>@Observable</code> view
+                models, and an app-level router handles navigation. Core defines the models,
+                the API client, and the service protocols. Each feature provides its own live
+                service, with async/await throughout. Because the view models depend on
+                protocols, tests can swap in fakes. Login tokens are stored in the Keychain,
+                and the app uses no third-party libraries.
+              </p>
+              <ul class="project-tech-list">
+                <li>Swift</li>
+                <li>SwiftUI</li>
+                <li>@Observable</li>
+                <li>async/await</li>
+                <li>Swift Package</li>
+                <li>Keychain</li>
+              </ul>
+            </div>
           </div>
 
+          <!-- Previous featured project, hidden while ThingMap is featured
           <div class="project-showcase-list">
             <article class="project-feature project-feature--personal project-feature--wide">
               <figure class="project-shot">
@@ -183,9 +278,11 @@
               </div>
             </article>
           </div>
+          -->
         </div>
       </section>
 
+      <!-- Previous projects, hidden while ThingMap is featured
       <section class="section" id="work" aria-labelledby="work-heading">
         <div class="container">
           <div class="work-intro">
@@ -321,6 +418,7 @@
           </div>
         </div>
       </section>
+      -->
 
       <section class="section" id="contact" aria-labelledby="contact-heading">
         <div class="container">
