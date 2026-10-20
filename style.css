@@ -557,8 +557,102 @@ h2 {
   line-height: 1.45;
 }
 
-.thingmap-intro p:last-child {
+.thingmap-intro p:last-of-type {
   margin-bottom: 0;
+}
+
+/* App Store badge, shared with thingmap.app (thingmap-api/home-page) */
+.availability {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.coming-soon {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--color-text);
+  font-size: 0.96rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.app-store-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 64px;
+  padding: 9px 18px 9px 10px;
+  border: 1px solid rgba(3, 218, 197, 0.55);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.34);
+  color: var(--color-text);
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.app-store-action:hover {
+  border-color: #35f3df;
+  background: rgba(3, 218, 197, 0.1);
+  transform: translateY(-1px);
+}
+
+.app-store-action:focus-visible {
+  outline: 3px solid var(--purple-200);
+  outline-offset: 3px;
+}
+
+.app-store-icon {
+  display: grid;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid rgba(3, 218, 197, 0.45);
+  border-radius: 10px;
+  background: rgba(3, 218, 197, 0.12);
+  color: var(--color-accent);
+}
+
+.app-store-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.app-store-icon circle {
+  fill: currentColor;
+  stroke: none;
+}
+
+.action-copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.action-kicker {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 650;
+}
+
+.action-label {
+  margin-top: 2px;
+  font-size: 1rem;
+  font-weight: 800;
 }
 
 .status-pill {
@@ -821,6 +915,23 @@ h2 {
   .footer-content {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .availability {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .coming-soon,
+  .app-store-action {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .app-store-action {
+    justify-content: flex-start;
   }
 }
 
